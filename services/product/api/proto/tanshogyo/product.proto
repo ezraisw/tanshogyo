@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+package tanshogyo.v1;
+
+option go_package = "internal/app/product/adapter/grpc/pb";
+
+import "google/protobuf/timestamp.proto";
+
+service ProductService {
+  rpc Get (SingleProductRequest) returns (Product);
+  rpc Update (UpdateProductRequest) returns (Product);
+}
+
+message SingleProductRequest {
+  string id = 1;
+}
+
+message UpdateProductRequest {
+  string id = 1;
+  string seller_id = 2;
+  string name = 3;
+  string description = 4;
+  int64 price = 5;
+  int64 quantity = 6;
+}
+
+message Product {
+  string id = 1;
+  string seller_id = 2;
+  string name = 3;
+  string description = 4;
+  int64 price = 5;
+  int64 quantity = 6;
+  google.protobuf.Timestamp created_at = 7;
+  google.protobuf.Timestamp updated_at = 8;
+}

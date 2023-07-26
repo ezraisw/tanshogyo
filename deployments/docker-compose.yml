@@ -1,0 +1,108 @@
+version: "3.8"
+name: tanshogyo
+services:
+  redis:
+    image: redis:7.0.12-alpine3.18
+
+  # User service
+  userdb:
+    image: mysql:8.0.34
+    environment:
+      MYSQL_RANDOM_ROOT_PASSWORD: true
+      MYSQL_DATABASE: user
+      MYSQL_USER: user
+      MYSQL_PASSWORD: 0AhmKyl002
+  user:
+    build:
+      context: ../
+      dockerfile: ./services/user/Dockerfile
+    depends_on:
+      - userdb
+    ports:
+      - 7080:7080
+      - 7880:7880
+    environment:
+      USER_STAGE: local
+      USER_HTTP_HOST: 0.0.0.0
+      USER_HTTP_PORT: 7080
+      USER_GRPC_HOST: 0.0.0.0
+      USER_GRPC_PORT: 7880
+      USER_LOGGER_LEVEL: DEBUG
+      USER_DATASOURCES_GORM_CONNECTIONS_MAIN_HOST: userdb
+      USER_DATASOURCES_GORM_CONNECTIONS_MAIN_PORT: 3306
+      USER_DATASOURCES_GORM_CONNECTIONS_MAIN_DATABASE: user
+      USER_DATASOURCES_GORM_CONNECTIONS_MAIN_USERNAME: user
+      USER_DATASOURCES_GORM_CONNECTIONS_MAIN_PASSWORD: 0AhmKyl002
+
+  # Product service
+  productdb:
+    image: mysql:8.0.34
+    environment:
+      MYSQL_RANDOM_ROOT_PASSWORD: true
+      MYSQL_DATABASE: product
+      MYSQL_USER: product
+      MYSQL_PASSWORD: vQy3Ls7dzW
+  product:
+    build:
+      context: ../
+      dockerfile: ./services/product/Dockerfile
+    depends_on:
+      - productdb
+      - user
+    ports:
+      - 8080:8080
+      - 8880:8880
+    environment:
+      PRODUCT_STAGE: local
+      PRODUCT_HTTP_HOST: 0.0.0.0
+      PRODUCT_HTTP_PORT: 8080
+      PRODUCT_GRPC_HOST: 0.0.0.0
+      PRODUCT_GRPC_PORT: 8880
+      PRODUCT_LOGGER_LEVEL: DEBUG
+      PRODUCT_DATASOURCES_GORM_CONNECTIONS_MAIN_HOST: productdb
+      PRODUCT_DATASOURCES_GORM_CONNECTIONS_MAIN_PORT: 3306
+      PRODUCT_DATASOURCES_GORM_CONNECTIONS_MAIN_DATABASE: product
+      PRODUCT_DATASOURCES_GORM_CONNECTIONS_MAIN_USERNAME: product
+      PRODUCT_DATASOURCES_GORM_CONNECTIONS_MAIN_PASSWORD: vQy3Ls7dzW
+      PRODUCT_USERAUTH_HOST: user
+      PRODUCT_USERAUTH_PORT: 7880
+
+  # Transaction service
+  transactiondb:
+    image: mysql:8.0.34
+    environment:
+      MYSQL_RANDOM_ROOT_PASSWORD: true
+      MYSQL_DATABASE: transaction
+      MYSQL_USER: transaction
+      MYSQL_PASSWORD: ua6b3P1xen
+  transaction:
+    build:
+      context: ../
+      dockerfile: ./services/transaction/Dockerfile
+    depends_on:
+      - redis
+      - transactiondb
+      - user
+      - product
+    ports:
+      - 9080:9080
+      - 9880:9880
+    environment:
+      TRANSACTION_STAGE: local
+      TRANSACTION_HTTP_HOST: 0.0.0.0
+      TRANSACTION_HTTP_PORT: 9080
+      TRANSACTION_GRPC_HOST: 0.0.0.0
+      TRANSACTION_GRPC_PORT: 9880
+      TRANSACTION_LOGGER_LEVEL: DEBUG
+      TRANSACTION_DATASOURCES_GORM_CONNECTIONS_MAIN_HOST: transactiondb
+      TRANSACTION_DATASOURCES_GORM_CONNECTIONS_MAIN_PORT: 3306
+      TRANSACTION_DATASOURCES_GORM_CONNECTIONS_MAIN_DATABASE: transaction
+      TRANSACTION_DATASOURCES_GORM_CONNECTIONS_MAIN_USERNAME: transaction
+      TRANSACTION_DATASOURCES_GORM_CONNECTIONS_MAIN_PASSWORD: ua6b3P1xen
+      TRANSACTION_USERAUTH_HOST: user
+      TRANSACTION_USERAUTH_PORT: 7880
+      TRANSACTION_PRODUCT_HOST: product
+      TRANSACTION_PRODUCT_PORT: 8880
+      TRANSACTION_REDIS_HOST: redis
+      TRANSACTION_REDIS_PORT: 6379
+      TRANSACTION_REDIS_DB: 0

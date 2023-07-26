@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package tanshogyo.v1;
+
+option go_package = "internal/app/user/adapter/grpc/pb";
+
+import "google/protobuf/timestamp.proto";
+
+service UserService {
+  rpc Authenticate (AuthenticationRequest) returns (User);
+}
+
+message AuthenticationRequest {
+  string token = 1;
+}
+
+message User {
+  string id = 1;
+  string username = 2;
+  string email = 3;
+  string name = 4;
+  google.protobuf.Timestamp created_at = 5;
+  google.protobuf.Timestamp updated_at = 6;
+}

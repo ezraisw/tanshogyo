@@ -1,0 +1,503 @@
+{
+	"info": {
+		"_postman_id": "999762c4-30a9-494a-99d7-17bd51c3d719",
+		"name": "tanshogyo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4094511"
+	},
+	"item": [
+		{
+			"name": "Product Service",
+			"item": [
+				{
+					"name": "Product",
+					"item": [
+						{
+							"name": "Seller List Product",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Auth-Token",
+										"value": "1303491a-19bb-49fa-b723-68debc74e6e3",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{productBaseUrl}}/v1/seller/product?limit=10&offset=0",
+									"host": [
+										"{{productBaseUrl}}"
+									],
+									"path": [
+										"v1",
+										"seller",
+										"product"
+									],
+									"query": [
+										{
+											"key": "limit",
+											"value": "10"
+										},
+										{
+											"key": "offset",
+											"value": "0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Seller Create Product",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Auth-Token",
+										"value": "1303491a-19bb-49fa-b723-68debc74e6e3",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"May Flower\",\r\n    \"description\": \"Catnip for humans\",\r\n    \"price\": 80000,\r\n    \"quantity\": 200\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{productBaseUrl}}/v1/seller/product",
+									"host": [
+										"{{productBaseUrl}}"
+									],
+									"path": [
+										"v1",
+										"seller",
+										"product"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Seller Update Product",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "X-Auth-Token",
+										"value": "d8f44fd5-dec2-4dc4-a572-e2cade16c3aa",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Neighbor's door\",\r\n    \"description\": \"Stolen from yesterday\",\r\n    \"price\": 105000,\r\n    \"quantity\": 20\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{productBaseUrl}}/v1/seller/product/1e9d1bde-f793-4ab2-9e9e-38ff3ac90901",
+									"host": [
+										"{{productBaseUrl}}"
+									],
+									"path": [
+										"v1",
+										"seller",
+										"product",
+										"1e9d1bde-f793-4ab2-9e9e-38ff3ac90901"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Seller Delete Product",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "X-Auth-Token",
+										"value": "d8f44fd5-dec2-4dc4-a572-e2cade16c3aa",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{productBaseUrl}}/v1/seller/product/f3205ac1-1b20-41f7-a373-75c3ed1d07c2",
+									"host": [
+										"{{productBaseUrl}}"
+									],
+									"path": [
+										"v1",
+										"seller",
+										"product",
+										"f3205ac1-1b20-41f7-a373-75c3ed1d07c2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List Product",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{productBaseUrl}}/v1/product?limit=10&offset=0",
+									"host": [
+										"{{productBaseUrl}}"
+									],
+									"path": [
+										"v1",
+										"product"
+									],
+									"query": [
+										{
+											"key": "limit",
+											"value": "10"
+										},
+										{
+											"key": "offset",
+											"value": "0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Product",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{productBaseUrl}}/v1/product/880a55e6-252a-4106-9fdc-861e8ffd6186",
+									"host": [
+										"{{productBaseUrl}}"
+									],
+									"path": [
+										"v1",
+										"product",
+										"880a55e6-252a-4106-9fdc-861e8ffd6186"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Seller",
+					"item": [
+						{
+							"name": "Get Seller",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Auth-Token",
+										"value": "d8f44fd5-dec2-4dc4-a572-e2cade16c3aa",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{productBaseUrl}}/v1/seller",
+									"host": [
+										"{{productBaseUrl}}"
+									],
+									"path": [
+										"v1",
+										"seller"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Register Seller",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Auth-Token",
+										"value": "327e05eb-23d9-4bde-bd5a-78ebc5b9595c",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"shopName\": \"May Lay's shop\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{productBaseUrl}}/v1/seller",
+									"host": [
+										"{{productBaseUrl}}"
+									],
+									"path": [
+										"v1",
+										"seller"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "User Service",
+			"item": [
+				{
+					"name": "User",
+					"item": [
+						{
+							"name": "Register User",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"testing\",\r\n    \"password\": \"Testing123\",\r\n    \"email\": \"may@example.com\",\r\n    \"name\": \"May Lay\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{userBaseUrl}}/v1/user/register",
+									"host": [
+										"{{userBaseUrl}}"
+									],
+									"path": [
+										"v1",
+										"user",
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"testing\",\r\n    \"password\": \"Testing123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{userBaseUrl}}/v1/user/login",
+									"host": [
+										"{{userBaseUrl}}"
+									],
+									"path": [
+										"v1",
+										"user",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Authenticate",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Auth-Token",
+										"value": "1303491a-19bb-49fa-b723-68debc74e6e3",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{userBaseUrl}}/v1/user",
+									"host": [
+										"{{userBaseUrl}}"
+									],
+									"path": [
+										"v1",
+										"user"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Transaction Service",
+			"item": [
+				{
+					"name": "Transaction",
+					"item": [
+						{
+							"name": "List Transaction",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Auth-Token",
+										"value": "60e84dae-8aa1-4d89-bb90-1f2540b88077",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{transactionBaseUrl}}/v1/transaction",
+									"host": [
+										"{{transactionBaseUrl}}"
+									],
+									"path": [
+										"v1",
+										"transaction"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Transaction",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Auth-Token",
+										"value": "60e84dae-8aa1-4d89-bb90-1f2540b88077",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{transactionBaseUrl}}/v1/transaction",
+									"host": [
+										"{{transactionBaseUrl}}"
+									],
+									"path": [
+										"v1",
+										"transaction"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Cart",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Auth-Token",
+										"value": "60e84dae-8aa1-4d89-bb90-1f2540b88077",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{transactionBaseUrl}}/v1/transaction/cart",
+									"host": [
+										"{{transactionBaseUrl}}"
+									],
+									"path": [
+										"v1",
+										"transaction",
+										"cart"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Cart",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "X-Auth-Token",
+										"value": "60e84dae-8aa1-4d89-bb90-1f2540b88077",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"details\": [\r\n        {\r\n            \"productId\": \"1e9d1bde-f793-4ab2-9e9e-38ff3ac90901\",\r\n            \"quantity\": 5\r\n        },\r\n        {\r\n            \"productId\": \"dd7c7666-9fc4-44b1-9c8c-4c7c29101711\",\r\n            \"quantity\": 10\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{transactionBaseUrl}}/v1/transaction/cart",
+									"host": [
+										"{{transactionBaseUrl}}"
+									],
+									"path": [
+										"v1",
+										"transaction",
+										"cart"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "productBaseUrl",
+			"value": "http://localhost:8080",
+			"type": "string"
+		},
+		{
+			"key": "userBaseUrl",
+			"value": "http://localhost:7080",
+			"type": "string"
+		},
+		{
+			"key": "transactionBaseUrl",
+			"value": "http://localhost:9080",
+			"type": "string"
+		}
+	]
+}

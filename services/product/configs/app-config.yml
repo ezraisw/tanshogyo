@@ -1,0 +1,29 @@
+stage: local
+http:
+  host: 0.0.0.0
+  port: 8080
+grpc:
+  host: 0.0.0.0
+  port: 8880
+  certificateFile:
+  privateKeyFile:
+logger:
+  level: DEBUG
+datasources:
+  gorm:
+    logging:
+      slowThreshold: 1s
+      ignoreRecordNotFoundError: true
+      logLevel: INFO
+    defaultConnection: main
+    connections:
+      main:
+        driver: mysql
+        host: localhost
+        port: 3306
+        database: product
+        username:
+        password:
+userAuth:
+  host: localhost
+  port: 443
