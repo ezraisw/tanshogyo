@@ -1,8 +1,8 @@
 package web
 
 import (
+	"github.com/ezraisw/tanshogyo/pkg/userauth"
 	"github.com/go-chi/chi/v5"
-	"github.com/pwnedgod/tanshogyo/pkg/userauth"
 )
 
 type TransactionHandlerRegistryOptions struct {

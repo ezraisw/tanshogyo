@@ -1,7 +1,7 @@
 package grpc
 
 import (
-	"github.com/pwnedgod/tanshogyo/services/user/internal/app/user/adapter/grpc/pb"
+	"github.com/ezraisw/tanshogyo/services/user/internal/app/user/adapter/grpc/pb"
 	"google.golang.org/grpc"
 )
 

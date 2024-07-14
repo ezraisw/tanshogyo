@@ -3,8 +3,8 @@ package usecaseimpl
 import (
 	"context"
 
-	"github.com/pwnedgod/tanshogyo/services/product/internal/app/product/repository"
-	"github.com/pwnedgod/tanshogyo/services/product/internal/app/product/usecase"
+	"github.com/ezraisw/tanshogyo/services/product/internal/app/product/repository"
+	"github.com/ezraisw/tanshogyo/services/product/internal/app/product/usecase"
 )
 
 type ProductListerOptions struct {

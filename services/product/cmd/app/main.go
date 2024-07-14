@@ -6,8 +6,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/pwnedgod/tanshogyo/pkg/common/util/signal"
-	"github.com/pwnedgod/tanshogyo/services/product/internal/app"
+	"github.com/ezraisw/tanshogyo/pkg/common/util/signal"
+	"github.com/ezraisw/tanshogyo/services/product/internal/app"
 )
 
 const DurationShutdownTimeout = 60 * time.Second

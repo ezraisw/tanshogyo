@@ -3,11 +3,11 @@ package web
 import (
 	"net/http"
 
+	"github.com/ezraisw/tanshogyo/pkg/common/preseterrors"
+	"github.com/ezraisw/tanshogyo/pkg/common/util/httphelper"
+	"github.com/ezraisw/tanshogyo/pkg/userauth"
+	"github.com/ezraisw/tanshogyo/services/product/internal/app/seller/usecase"
 	"github.com/go-chi/render"
-	"github.com/pwnedgod/tanshogyo/pkg/common/preseterrors"
-	"github.com/pwnedgod/tanshogyo/pkg/common/util/httphelper"
-	"github.com/pwnedgod/tanshogyo/pkg/userauth"
-	"github.com/pwnedgod/tanshogyo/services/product/internal/app/seller/usecase"
 )
 
 type SellerControllerOptions struct {

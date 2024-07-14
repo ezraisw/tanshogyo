@@ -3,9 +3,9 @@ package grpc
 import (
 	context "context"
 
-	"github.com/pwnedgod/tanshogyo/pkg/common/util/grpchelper"
-	"github.com/pwnedgod/tanshogyo/services/user/internal/app/user/adapter/grpc/pb"
-	"github.com/pwnedgod/tanshogyo/services/user/internal/app/user/usecase"
+	"github.com/ezraisw/tanshogyo/pkg/common/util/grpchelper"
+	"github.com/ezraisw/tanshogyo/services/user/internal/app/user/adapter/grpc/pb"
+	"github.com/ezraisw/tanshogyo/services/user/internal/app/user/usecase"
 	"google.golang.org/grpc/status"
 	"google.golang.org/protobuf/types/known/timestamppb"
 )

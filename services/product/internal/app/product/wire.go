@@ -4,14 +4,14 @@
 package product
 
 import (
+	"github.com/ezraisw/tanshogyo/services/product/internal/app/product/adapter/grpc"
+	"github.com/ezraisw/tanshogyo/services/product/internal/app/product/adapter/web"
+	"github.com/ezraisw/tanshogyo/services/product/internal/app/product/middleware"
+	"github.com/ezraisw/tanshogyo/services/product/internal/app/product/repository"
+	repositorygorm "github.com/ezraisw/tanshogyo/services/product/internal/app/product/repository/gorm"
+	"github.com/ezraisw/tanshogyo/services/product/internal/app/product/usecase"
+	usecaseimpl "github.com/ezraisw/tanshogyo/services/product/internal/app/product/usecase/impl"
 	"github.com/google/wire"
-	"github.com/pwnedgod/tanshogyo/services/product/internal/app/product/adapter/grpc"
-	"github.com/pwnedgod/tanshogyo/services/product/internal/app/product/adapter/web"
-	"github.com/pwnedgod/tanshogyo/services/product/internal/app/product/middleware"
-	"github.com/pwnedgod/tanshogyo/services/product/internal/app/product/repository"
-	repositorygorm "github.com/pwnedgod/tanshogyo/services/product/internal/app/product/repository/gorm"
-	"github.com/pwnedgod/tanshogyo/services/product/internal/app/product/usecase"
-	usecaseimpl "github.com/pwnedgod/tanshogyo/services/product/internal/app/product/usecase/impl"
 )
 
 var (

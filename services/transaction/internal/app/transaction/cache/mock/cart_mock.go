@@ -9,7 +9,7 @@ import (
 	reflect "reflect"
 
 	gomock "github.com/golang/mock/gomock"
-	cache "github.com/pwnedgod/tanshogyo/services/transaction/internal/app/transaction/cache"
+	cache "github.com/ezraisw/tanshogyo/services/transaction/internal/app/transaction/cache"
 )
 
 // MockCartCache is a mock of CartCache interface.

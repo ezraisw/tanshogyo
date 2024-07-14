@@ -3,8 +3,8 @@ package usecaseimpl_test
 import (
 	"time"
 
-	"github.com/pwnedgod/tanshogyo/services/user/internal/app/user/model"
-	"github.com/pwnedgod/tanshogyo/services/user/internal/app/user/usecase"
+	"github.com/ezraisw/tanshogyo/services/user/internal/app/user/model"
+	"github.com/ezraisw/tanshogyo/services/user/internal/app/user/usecase"
 )
 
 var (

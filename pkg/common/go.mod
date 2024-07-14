@@ -1,4 +1,4 @@
-module github.com/pwnedgod/tanshogyo/pkg/common
+module github.com/ezraisw/tanshogyo/pkg/common
 
 go 1.20
 

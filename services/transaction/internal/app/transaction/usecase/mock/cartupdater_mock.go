@@ -9,7 +9,7 @@ import (
 	reflect "reflect"
 
 	gomock "github.com/golang/mock/gomock"
-	usecase "github.com/pwnedgod/tanshogyo/services/transaction/internal/app/transaction/usecase"
+	usecase "github.com/ezraisw/tanshogyo/services/transaction/internal/app/transaction/usecase"
 )
 
 // MockTransactionCartUpdater is a mock of TransactionCartUpdater interface.

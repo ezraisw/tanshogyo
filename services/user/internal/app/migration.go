@@ -1,6 +1,6 @@
 package app
 
-import usermodel "github.com/pwnedgod/tanshogyo/services/user/internal/app/user/model"
+import usermodel "github.com/ezraisw/tanshogyo/services/user/internal/app/user/model"
 
 // Models to be migrated as a table.
 var models = []any{

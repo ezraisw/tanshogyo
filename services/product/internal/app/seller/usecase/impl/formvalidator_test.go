@@ -3,13 +3,13 @@ package usecaseimpl_test
 import (
 	"context"
 
+	"github.com/ezraisw/tanshogyo/pkg/common/preseterrors"
+	"github.com/ezraisw/tanshogyo/pkg/common/rules"
+	"github.com/ezraisw/tanshogyo/services/product/internal/app/seller/usecase"
+	usecaseimpl "github.com/ezraisw/tanshogyo/services/product/internal/app/seller/usecase/impl"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
-	"github.com/pwnedgod/tanshogyo/pkg/common/preseterrors"
-	"github.com/pwnedgod/tanshogyo/pkg/common/rules"
-	"github.com/pwnedgod/tanshogyo/services/product/internal/app/seller/usecase"
-	usecaseimpl "github.com/pwnedgod/tanshogyo/services/product/internal/app/seller/usecase/impl"
 )
 
 var _ = Describe("SellerFormValidator", func() {

@@ -4,14 +4,14 @@
 package seller
 
 import (
+	"github.com/ezraisw/tanshogyo/services/product/internal/app/seller/adapter/web"
+	"github.com/ezraisw/tanshogyo/services/product/internal/app/seller/factory"
+	factoryimpl "github.com/ezraisw/tanshogyo/services/product/internal/app/seller/factory/impl"
+	"github.com/ezraisw/tanshogyo/services/product/internal/app/seller/repository"
+	repositorygorm "github.com/ezraisw/tanshogyo/services/product/internal/app/seller/repository/gorm"
+	"github.com/ezraisw/tanshogyo/services/product/internal/app/seller/usecase"
+	usecaseimpl "github.com/ezraisw/tanshogyo/services/product/internal/app/seller/usecase/impl"
 	"github.com/google/wire"
-	"github.com/pwnedgod/tanshogyo/services/product/internal/app/seller/adapter/web"
-	"github.com/pwnedgod/tanshogyo/services/product/internal/app/seller/factory"
-	factoryimpl "github.com/pwnedgod/tanshogyo/services/product/internal/app/seller/factory/impl"
-	"github.com/pwnedgod/tanshogyo/services/product/internal/app/seller/repository"
-	repositorygorm "github.com/pwnedgod/tanshogyo/services/product/internal/app/seller/repository/gorm"
-	"github.com/pwnedgod/tanshogyo/services/product/internal/app/seller/usecase"
-	usecaseimpl "github.com/pwnedgod/tanshogyo/services/product/internal/app/seller/usecase/impl"
 )
 
 var (

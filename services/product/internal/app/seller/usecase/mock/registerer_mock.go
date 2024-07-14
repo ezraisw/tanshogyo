@@ -9,7 +9,7 @@ import (
 	reflect "reflect"
 
 	gomock "github.com/golang/mock/gomock"
-	usecase "github.com/pwnedgod/tanshogyo/services/product/internal/app/seller/usecase"
+	usecase "github.com/ezraisw/tanshogyo/services/product/internal/app/seller/usecase"
 )
 
 // MockSellerRegisterer is a mock of SellerRegisterer interface.

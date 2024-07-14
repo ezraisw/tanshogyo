@@ -1,4 +1,4 @@
-module github.com/pwnedgod/tanshogyo/services/product
+module github.com/ezraisw/tanshogyo/services/product
 
 go 1.20
 
@@ -10,9 +10,9 @@ require (
 	github.com/google/wire v0.5.0
 	github.com/onsi/ginkgo/v2 v2.1.4
 	github.com/onsi/gomega v1.19.0
-	github.com/pwnedgod/tanshogyo/pkg/common v0.0.0-00010101000000-000000000000
-	github.com/pwnedgod/tanshogyo/pkg/gormds v0.0.0-00010101000000-000000000000
-	github.com/pwnedgod/tanshogyo/pkg/userauth v0.0.0-00010101000000-000000000000
+	github.com/ezraisw/tanshogyo/pkg/common v0.0.0-00010101000000-000000000000
+	github.com/ezraisw/tanshogyo/pkg/gormds v0.0.0-00010101000000-000000000000
+	github.com/ezraisw/tanshogyo/pkg/userauth v0.0.0-00010101000000-000000000000
 	google.golang.org/grpc v1.47.0
 	google.golang.org/protobuf v1.28.0
 	gorm.io/gorm v1.25.2
@@ -55,7 +55,7 @@ require (
 )
 
 replace (
-	github.com/pwnedgod/tanshogyo/pkg/common => ../../pkg/common
-	github.com/pwnedgod/tanshogyo/pkg/gormds => ../../pkg/gormds
-	github.com/pwnedgod/tanshogyo/pkg/userauth => ../../pkg/userauth
+	github.com/ezraisw/tanshogyo/pkg/common => ../../pkg/common
+	github.com/ezraisw/tanshogyo/pkg/gormds => ../../pkg/gormds
+	github.com/ezraisw/tanshogyo/pkg/userauth => ../../pkg/userauth
 )

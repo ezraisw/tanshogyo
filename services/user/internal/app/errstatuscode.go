@@ -3,9 +3,9 @@ package app
 import (
 	"net/http"
 
-	"github.com/pwnedgod/tanshogyo/pkg/common/preseterrors"
-	"github.com/pwnedgod/tanshogyo/pkg/common/util/grpchelper"
-	"github.com/pwnedgod/tanshogyo/pkg/common/util/httphelper"
+	"github.com/ezraisw/tanshogyo/pkg/common/preseterrors"
+	"github.com/ezraisw/tanshogyo/pkg/common/util/grpchelper"
+	"github.com/ezraisw/tanshogyo/pkg/common/util/httphelper"
 	"google.golang.org/grpc/codes"
 )
 

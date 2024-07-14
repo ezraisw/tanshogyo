@@ -1,9 +1,9 @@
-module github.com/pwnedgod/tanshogyo/pkg/gormds
+module github.com/ezraisw/tanshogyo/pkg/gormds
 
 go 1.20
 
 require (
-	github.com/pwnedgod/tanshogyo/pkg/common v0.0.0-00010101000000-000000000000
+	github.com/ezraisw/tanshogyo/pkg/common v0.0.0-00010101000000-000000000000
 	github.com/rs/zerolog v1.29.1
 	gorm.io/driver/mysql v1.5.1
 	gorm.io/gorm v1.25.2
@@ -18,4 +18,4 @@ require (
 	golang.org/x/sys v0.10.0 // indirect
 )
 
-replace github.com/pwnedgod/tanshogyo/pkg/common => ../common
+replace github.com/ezraisw/tanshogyo/pkg/common => ../common

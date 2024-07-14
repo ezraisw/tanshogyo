@@ -4,12 +4,12 @@ import (
 	"context"
 	"errors"
 
-	"github.com/pwnedgod/tanshogyo/pkg/common/entity"
-	"github.com/pwnedgod/tanshogyo/pkg/common/preseterrors"
-	commonrepository "github.com/pwnedgod/tanshogyo/pkg/common/repository"
-	"github.com/pwnedgod/tanshogyo/pkg/common/util/timehelper"
-	"github.com/pwnedgod/tanshogyo/services/user/internal/app/user/repository"
-	"github.com/pwnedgod/tanshogyo/services/user/internal/app/user/usecase"
+	"github.com/ezraisw/tanshogyo/pkg/common/entity"
+	"github.com/ezraisw/tanshogyo/pkg/common/preseterrors"
+	commonrepository "github.com/ezraisw/tanshogyo/pkg/common/repository"
+	"github.com/ezraisw/tanshogyo/pkg/common/util/timehelper"
+	"github.com/ezraisw/tanshogyo/services/user/internal/app/user/repository"
+	"github.com/ezraisw/tanshogyo/services/user/internal/app/user/usecase"
 )
 
 type UserAuthenticatorOptions struct {

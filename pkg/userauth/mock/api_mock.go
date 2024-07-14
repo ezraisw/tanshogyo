@@ -9,7 +9,7 @@ import (
 	reflect "reflect"
 
 	gomock "github.com/golang/mock/gomock"
-	userauth "github.com/pwnedgod/tanshogyo/pkg/userauth"
+	userauth "github.com/ezraisw/tanshogyo/pkg/userauth"
 )
 
 // MockUserAPI is a mock of UserAPI interface.

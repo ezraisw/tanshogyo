@@ -3,9 +3,9 @@ package usecaseimpl
 import (
 	"errors"
 
-	"github.com/pwnedgod/tanshogyo/pkg/common/preseterrors"
-	"github.com/pwnedgod/tanshogyo/services/user/internal/app/user/model"
-	"github.com/pwnedgod/tanshogyo/services/user/internal/app/user/usecase"
+	"github.com/ezraisw/tanshogyo/pkg/common/preseterrors"
+	"github.com/ezraisw/tanshogyo/services/user/internal/app/user/model"
+	"github.com/ezraisw/tanshogyo/services/user/internal/app/user/usecase"
 )
 
 func fromForm(form usecase.UserForm) *model.User {

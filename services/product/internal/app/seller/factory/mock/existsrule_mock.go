@@ -9,7 +9,7 @@ import (
 
 	validation "github.com/go-ozzo/ozzo-validation/v4"
 	gomock "github.com/golang/mock/gomock"
-	factory "github.com/pwnedgod/tanshogyo/services/product/internal/app/seller/factory"
+	factory "github.com/ezraisw/tanshogyo/services/product/internal/app/seller/factory"
 )
 
 // MockSellerExistsRuleFactory is a mock of SellerExistsRuleFactory interface.

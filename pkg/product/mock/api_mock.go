@@ -9,7 +9,7 @@ import (
 	reflect "reflect"
 
 	gomock "github.com/golang/mock/gomock"
-	product "github.com/pwnedgod/tanshogyo/pkg/product"
+	product "github.com/ezraisw/tanshogyo/pkg/product"
 )
 
 // MockProductAPI is a mock of ProductAPI interface.

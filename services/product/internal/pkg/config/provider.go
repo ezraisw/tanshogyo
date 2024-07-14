@@ -1,6 +1,6 @@
 package config
 
-import "github.com/pwnedgod/tanshogyo/pkg/common/config"
+import "github.com/ezraisw/tanshogyo/pkg/common/config"
 
 func ProvideConfig(binder config.Binder) (*Config, error) {
 	config := &Config{}

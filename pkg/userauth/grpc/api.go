@@ -3,9 +3,9 @@ package userauthgrpc
 import (
 	"context"
 
-	"github.com/pwnedgod/tanshogyo/pkg/common/util/grpchelper"
-	"github.com/pwnedgod/tanshogyo/pkg/userauth"
-	"github.com/pwnedgod/tanshogyo/pkg/userauth/grpc/pb"
+	"github.com/ezraisw/tanshogyo/pkg/common/util/grpchelper"
+	"github.com/ezraisw/tanshogyo/pkg/userauth"
+	"github.com/ezraisw/tanshogyo/pkg/userauth/grpc/pb"
 )
 
 type GRPCUserAPI struct {

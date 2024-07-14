@@ -3,7 +3,7 @@ package repository
 import (
 	"context"
 
-	"github.com/pwnedgod/tanshogyo/pkg/common/entity"
+	"github.com/ezraisw/tanshogyo/pkg/common/entity"
 )
 
 //go:generate go run github.com/golang/mock/mockgen -source=repository.go -destination=mock/repository_mock.go -package=repositorymock

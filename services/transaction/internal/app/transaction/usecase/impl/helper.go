@@ -1,8 +1,8 @@
 package usecaseimpl
 
 import (
-	"github.com/pwnedgod/tanshogyo/services/transaction/internal/app/transaction/model"
-	"github.com/pwnedgod/tanshogyo/services/transaction/internal/app/transaction/usecase"
+	"github.com/ezraisw/tanshogyo/services/transaction/internal/app/transaction/model"
+	"github.com/ezraisw/tanshogyo/services/transaction/internal/app/transaction/usecase"
 )
 
 func toDto(transaction *model.Transaction) usecase.Transaction {

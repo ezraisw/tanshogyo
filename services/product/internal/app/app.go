@@ -3,10 +3,10 @@ package app
 import (
 	"context"
 
-	"github.com/pwnedgod/tanshogyo/pkg/common/core"
-	"github.com/pwnedgod/tanshogyo/pkg/common/entity"
-	"github.com/pwnedgod/tanshogyo/pkg/common/util/helper"
-	"github.com/pwnedgod/tanshogyo/pkg/common/util/reflhelper"
+	"github.com/ezraisw/tanshogyo/pkg/common/core"
+	"github.com/ezraisw/tanshogyo/pkg/common/entity"
+	"github.com/ezraisw/tanshogyo/pkg/common/util/helper"
+	"github.com/ezraisw/tanshogyo/pkg/common/util/reflhelper"
 )
 
 type ApplicationOptions struct {

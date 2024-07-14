@@ -9,7 +9,7 @@ import (
 
 	validation "github.com/go-ozzo/ozzo-validation/v4"
 	gomock "github.com/golang/mock/gomock"
-	factory "github.com/pwnedgod/tanshogyo/services/user/internal/app/user/factory"
+	factory "github.com/ezraisw/tanshogyo/services/user/internal/app/user/factory"
 )
 
 // MockUserUniqueRuleFactory is a mock of UserUniqueRuleFactory interface.

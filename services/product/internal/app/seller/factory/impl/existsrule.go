@@ -3,10 +3,10 @@ package factoryimpl
 import (
 	"context"
 
+	"github.com/ezraisw/tanshogyo/pkg/common/rules"
+	"github.com/ezraisw/tanshogyo/services/product/internal/app/seller/factory"
+	"github.com/ezraisw/tanshogyo/services/product/internal/app/seller/usecase"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
-	"github.com/pwnedgod/tanshogyo/pkg/common/rules"
-	"github.com/pwnedgod/tanshogyo/services/product/internal/app/seller/factory"
-	"github.com/pwnedgod/tanshogyo/services/product/internal/app/seller/usecase"
 )
 
 type SellerExistsRuleFactoryOptions struct {

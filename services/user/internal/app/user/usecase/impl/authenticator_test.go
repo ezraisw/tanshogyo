@@ -5,16 +5,16 @@ import (
 	"errors"
 	"time"
 
+	"github.com/ezraisw/tanshogyo/pkg/common/preseterrors"
+	repositorymock "github.com/ezraisw/tanshogyo/pkg/common/repository/mock"
+	"github.com/ezraisw/tanshogyo/pkg/common/util/helper"
+	"github.com/ezraisw/tanshogyo/pkg/common/util/timehelper"
+	"github.com/ezraisw/tanshogyo/services/user/internal/app/user/model"
+	"github.com/ezraisw/tanshogyo/services/user/internal/app/user/usecase"
+	usecaseimpl "github.com/ezraisw/tanshogyo/services/user/internal/app/user/usecase/impl"
 	"github.com/golang/mock/gomock"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
-	"github.com/pwnedgod/tanshogyo/pkg/common/preseterrors"
-	repositorymock "github.com/pwnedgod/tanshogyo/pkg/common/repository/mock"
-	"github.com/pwnedgod/tanshogyo/pkg/common/util/helper"
-	"github.com/pwnedgod/tanshogyo/pkg/common/util/timehelper"
-	"github.com/pwnedgod/tanshogyo/services/user/internal/app/user/model"
-	"github.com/pwnedgod/tanshogyo/services/user/internal/app/user/usecase"
-	usecaseimpl "github.com/pwnedgod/tanshogyo/services/user/internal/app/user/usecase/impl"
 )
 
 var _ = Describe("UserAuthenticator", func() {

@@ -6,14 +6,14 @@ package user
 import (
 	"github.com/google/wire"
 
-	"github.com/pwnedgod/tanshogyo/services/user/internal/app/user/adapter/grpc"
-	"github.com/pwnedgod/tanshogyo/services/user/internal/app/user/adapter/web"
-	"github.com/pwnedgod/tanshogyo/services/user/internal/app/user/factory"
-	factoryimpl "github.com/pwnedgod/tanshogyo/services/user/internal/app/user/factory/impl"
-	"github.com/pwnedgod/tanshogyo/services/user/internal/app/user/repository"
-	repositorygorm "github.com/pwnedgod/tanshogyo/services/user/internal/app/user/repository/gorm"
-	"github.com/pwnedgod/tanshogyo/services/user/internal/app/user/usecase"
-	usecaseimpl "github.com/pwnedgod/tanshogyo/services/user/internal/app/user/usecase/impl"
+	"github.com/ezraisw/tanshogyo/services/user/internal/app/user/adapter/grpc"
+	"github.com/ezraisw/tanshogyo/services/user/internal/app/user/adapter/web"
+	"github.com/ezraisw/tanshogyo/services/user/internal/app/user/factory"
+	factoryimpl "github.com/ezraisw/tanshogyo/services/user/internal/app/user/factory/impl"
+	"github.com/ezraisw/tanshogyo/services/user/internal/app/user/repository"
+	repositorygorm "github.com/ezraisw/tanshogyo/services/user/internal/app/user/repository/gorm"
+	"github.com/ezraisw/tanshogyo/services/user/internal/app/user/usecase"
+	usecaseimpl "github.com/ezraisw/tanshogyo/services/user/internal/app/user/usecase/impl"
 )
 
 var (

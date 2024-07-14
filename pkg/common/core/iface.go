@@ -3,7 +3,7 @@ package core
 import (
 	"context"
 
-	"github.com/pwnedgod/tanshogyo/pkg/common/util/reflhelper"
+	"github.com/ezraisw/tanshogyo/pkg/common/util/reflhelper"
 )
 
 type Runner interface {

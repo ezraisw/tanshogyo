@@ -1,9 +1,9 @@
 package web
 
 import (
+	"github.com/ezraisw/tanshogyo/pkg/userauth"
+	"github.com/ezraisw/tanshogyo/services/product/internal/app/product/middleware"
 	"github.com/go-chi/chi/v5"
-	"github.com/pwnedgod/tanshogyo/pkg/userauth"
-	"github.com/pwnedgod/tanshogyo/services/product/internal/app/product/middleware"
 )
 
 type ProductHandlerRegistryOptions struct {

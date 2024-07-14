@@ -1,8 +1,8 @@
 package repository
 
 import (
-	"github.com/pwnedgod/tanshogyo/pkg/common/repository"
-	"github.com/pwnedgod/tanshogyo/services/user/internal/app/user/model"
+	"github.com/ezraisw/tanshogyo/pkg/common/repository"
+	"github.com/ezraisw/tanshogyo/services/user/internal/app/user/model"
 )
 
 type UserRepository interface {

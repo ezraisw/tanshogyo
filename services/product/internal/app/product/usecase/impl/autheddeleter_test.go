@@ -4,14 +4,14 @@ import (
 	"context"
 	"errors"
 
+	"github.com/ezraisw/tanshogyo/pkg/common/preseterrors"
+	usecaseimpl "github.com/ezraisw/tanshogyo/services/product/internal/app/product/usecase/impl"
+	usecasemock "github.com/ezraisw/tanshogyo/services/product/internal/app/product/usecase/mock"
+	sellerusecase "github.com/ezraisw/tanshogyo/services/product/internal/app/seller/usecase"
+	sellerusecasemock "github.com/ezraisw/tanshogyo/services/product/internal/app/seller/usecase/mock"
 	"github.com/golang/mock/gomock"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
-	"github.com/pwnedgod/tanshogyo/pkg/common/preseterrors"
-	usecaseimpl "github.com/pwnedgod/tanshogyo/services/product/internal/app/product/usecase/impl"
-	usecasemock "github.com/pwnedgod/tanshogyo/services/product/internal/app/product/usecase/mock"
-	sellerusecase "github.com/pwnedgod/tanshogyo/services/product/internal/app/seller/usecase"
-	sellerusecasemock "github.com/pwnedgod/tanshogyo/services/product/internal/app/seller/usecase/mock"
 )
 
 var _ = Describe("ProductAuthedDeleter", func() {

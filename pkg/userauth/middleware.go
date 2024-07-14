@@ -4,7 +4,7 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/pwnedgod/tanshogyo/pkg/common/util/httphelper"
+	"github.com/ezraisw/tanshogyo/pkg/common/util/httphelper"
 )
 
 //go:generate go run github.com/golang/mock/mockgen -source=middleware.go -destination=mock/middleware_mock.go -package=userauthmock

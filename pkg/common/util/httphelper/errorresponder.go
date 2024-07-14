@@ -3,8 +3,8 @@ package httphelper
 import (
 	"net/http"
 
+	"github.com/ezraisw/tanshogyo/pkg/common/preseterrors"
 	"github.com/go-chi/render"
-	"github.com/pwnedgod/tanshogyo/pkg/common/preseterrors"
 )
 
 type (

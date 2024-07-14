@@ -5,18 +5,18 @@ import (
 	"errors"
 	"time"
 
+	repositorymock "github.com/ezraisw/tanshogyo/pkg/common/repository/mock"
+	"github.com/ezraisw/tanshogyo/pkg/common/util/hasher"
+	"github.com/ezraisw/tanshogyo/pkg/common/util/helper"
+	"github.com/ezraisw/tanshogyo/pkg/common/util/idgen"
+	"github.com/ezraisw/tanshogyo/pkg/common/util/timehelper"
+	"github.com/ezraisw/tanshogyo/services/user/internal/app/user/model"
+	"github.com/ezraisw/tanshogyo/services/user/internal/app/user/usecase"
+	usecaseimpl "github.com/ezraisw/tanshogyo/services/user/internal/app/user/usecase/impl"
+	usecasemock "github.com/ezraisw/tanshogyo/services/user/internal/app/user/usecase/mock"
 	"github.com/golang/mock/gomock"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
-	repositorymock "github.com/pwnedgod/tanshogyo/pkg/common/repository/mock"
-	"github.com/pwnedgod/tanshogyo/pkg/common/util/hasher"
-	"github.com/pwnedgod/tanshogyo/pkg/common/util/helper"
-	"github.com/pwnedgod/tanshogyo/pkg/common/util/idgen"
-	"github.com/pwnedgod/tanshogyo/pkg/common/util/timehelper"
-	"github.com/pwnedgod/tanshogyo/services/user/internal/app/user/model"
-	"github.com/pwnedgod/tanshogyo/services/user/internal/app/user/usecase"
-	usecaseimpl "github.com/pwnedgod/tanshogyo/services/user/internal/app/user/usecase/impl"
-	usecasemock "github.com/pwnedgod/tanshogyo/services/user/internal/app/user/usecase/mock"
 )
 
 var _ = Describe("UserRegisterer", func() {

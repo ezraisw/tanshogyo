@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/pwnedgod/tanshogyo/pkg/common/util/helper"
-	"github.com/pwnedgod/tanshogyo/pkg/common/util/reflhelper"
+	"github.com/ezraisw/tanshogyo/pkg/common/util/helper"
+	"github.com/ezraisw/tanshogyo/pkg/common/util/reflhelper"
 	"github.com/rs/zerolog"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"

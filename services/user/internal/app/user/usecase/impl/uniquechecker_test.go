@@ -4,13 +4,13 @@ import (
 	"context"
 	"errors"
 
+	repositorymock "github.com/ezraisw/tanshogyo/pkg/common/repository/mock"
+	"github.com/ezraisw/tanshogyo/services/user/internal/app/user/model"
+	"github.com/ezraisw/tanshogyo/services/user/internal/app/user/usecase"
+	usecaseimpl "github.com/ezraisw/tanshogyo/services/user/internal/app/user/usecase/impl"
 	"github.com/golang/mock/gomock"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
-	repositorymock "github.com/pwnedgod/tanshogyo/pkg/common/repository/mock"
-	"github.com/pwnedgod/tanshogyo/services/user/internal/app/user/model"
-	"github.com/pwnedgod/tanshogyo/services/user/internal/app/user/usecase"
-	usecaseimpl "github.com/pwnedgod/tanshogyo/services/user/internal/app/user/usecase/impl"
 )
 
 var _ = Describe("UserUniqueChecker", func() {

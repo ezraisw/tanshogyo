@@ -3,9 +3,9 @@ package usecaseimpl
 import (
 	"context"
 
-	"github.com/pwnedgod/tanshogyo/pkg/common/entity"
-	"github.com/pwnedgod/tanshogyo/services/user/internal/app/user/repository"
-	"github.com/pwnedgod/tanshogyo/services/user/internal/app/user/usecase"
+	"github.com/ezraisw/tanshogyo/pkg/common/entity"
+	"github.com/ezraisw/tanshogyo/services/user/internal/app/user/repository"
+	"github.com/ezraisw/tanshogyo/services/user/internal/app/user/usecase"
 )
 
 type UserUniqueCheckerOptions struct {

@@ -3,11 +3,11 @@ package usecaseimpl
 import (
 	"context"
 
+	"github.com/ezraisw/tanshogyo/pkg/common/rules"
+	"github.com/ezraisw/tanshogyo/services/user/internal/app/user/factory"
+	"github.com/ezraisw/tanshogyo/services/user/internal/app/user/usecase"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
 	"github.com/go-ozzo/ozzo-validation/v4/is"
-	"github.com/pwnedgod/tanshogyo/pkg/common/rules"
-	"github.com/pwnedgod/tanshogyo/services/user/internal/app/user/factory"
-	"github.com/pwnedgod/tanshogyo/services/user/internal/app/user/usecase"
 )
 
 type UserFormValidatorOptions struct {

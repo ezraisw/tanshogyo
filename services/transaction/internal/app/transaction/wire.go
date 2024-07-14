@@ -4,14 +4,14 @@
 package transaction
 
 import (
+	"github.com/ezraisw/tanshogyo/services/transaction/internal/app/transaction/adapter/web"
+	"github.com/ezraisw/tanshogyo/services/transaction/internal/app/transaction/cache"
+	cacheredis "github.com/ezraisw/tanshogyo/services/transaction/internal/app/transaction/cache/redis"
+	"github.com/ezraisw/tanshogyo/services/transaction/internal/app/transaction/repository"
+	repositorygorm "github.com/ezraisw/tanshogyo/services/transaction/internal/app/transaction/repository/gorm"
+	"github.com/ezraisw/tanshogyo/services/transaction/internal/app/transaction/usecase"
+	usecaseimpl "github.com/ezraisw/tanshogyo/services/transaction/internal/app/transaction/usecase/impl"
 	"github.com/google/wire"
-	"github.com/pwnedgod/tanshogyo/services/transaction/internal/app/transaction/adapter/web"
-	"github.com/pwnedgod/tanshogyo/services/transaction/internal/app/transaction/cache"
-	cacheredis "github.com/pwnedgod/tanshogyo/services/transaction/internal/app/transaction/cache/redis"
-	"github.com/pwnedgod/tanshogyo/services/transaction/internal/app/transaction/repository"
-	repositorygorm "github.com/pwnedgod/tanshogyo/services/transaction/internal/app/transaction/repository/gorm"
-	"github.com/pwnedgod/tanshogyo/services/transaction/internal/app/transaction/usecase"
-	usecaseimpl "github.com/pwnedgod/tanshogyo/services/transaction/internal/app/transaction/usecase/impl"
 )
 
 var (

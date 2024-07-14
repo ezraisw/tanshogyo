@@ -1,8 +1,8 @@
 package repositorygorm
 
 import (
-	"github.com/pwnedgod/tanshogyo/pkg/gormds/repository"
-	"github.com/pwnedgod/tanshogyo/services/transaction/internal/app/transaction/model"
+	"github.com/ezraisw/tanshogyo/pkg/gormds/repository"
+	"github.com/ezraisw/tanshogyo/services/transaction/internal/app/transaction/model"
 	"gorm.io/gorm"
 )
 

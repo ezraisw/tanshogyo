@@ -1,7 +1,7 @@
 package grpchelper
 
 import (
-	"github.com/pwnedgod/tanshogyo/pkg/common/preseterrors"
+	"github.com/ezraisw/tanshogyo/pkg/common/preseterrors"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

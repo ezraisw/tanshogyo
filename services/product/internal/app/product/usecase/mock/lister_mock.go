@@ -9,7 +9,7 @@ import (
 	reflect "reflect"
 
 	gomock "github.com/golang/mock/gomock"
-	usecase "github.com/pwnedgod/tanshogyo/services/product/internal/app/product/usecase"
+	usecase "github.com/ezraisw/tanshogyo/services/product/internal/app/product/usecase"
 )
 
 // MockProductLister is a mock of ProductLister interface.

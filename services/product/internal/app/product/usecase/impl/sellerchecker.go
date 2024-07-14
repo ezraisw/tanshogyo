@@ -4,11 +4,11 @@ import (
 	"context"
 	"errors"
 
-	"github.com/pwnedgod/tanshogyo/pkg/common/entity"
-	"github.com/pwnedgod/tanshogyo/pkg/common/preseterrors"
-	commonrepository "github.com/pwnedgod/tanshogyo/pkg/common/repository"
-	"github.com/pwnedgod/tanshogyo/services/product/internal/app/product/repository"
-	sellerusecase "github.com/pwnedgod/tanshogyo/services/product/internal/app/seller/usecase"
+	"github.com/ezraisw/tanshogyo/pkg/common/entity"
+	"github.com/ezraisw/tanshogyo/pkg/common/preseterrors"
+	commonrepository "github.com/ezraisw/tanshogyo/pkg/common/repository"
+	"github.com/ezraisw/tanshogyo/services/product/internal/app/product/repository"
+	sellerusecase "github.com/ezraisw/tanshogyo/services/product/internal/app/seller/usecase"
 )
 
 type ProductSellerCheckerOptions struct {

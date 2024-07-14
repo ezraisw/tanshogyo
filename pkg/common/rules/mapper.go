@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/ezraisw/tanshogyo/pkg/common/preseterrors"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
-	"github.com/pwnedgod/tanshogyo/pkg/common/preseterrors"
 )
 
 func MapErrors(err error) error {

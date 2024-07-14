@@ -9,7 +9,7 @@ import (
 	reflect "reflect"
 
 	gomock "github.com/golang/mock/gomock"
-	usecase "github.com/pwnedgod/tanshogyo/services/product/internal/app/seller/usecase"
+	usecase "github.com/ezraisw/tanshogyo/services/product/internal/app/seller/usecase"
 )
 
 // MockSellerFormValidator is a mock of SellerFormValidator interface.

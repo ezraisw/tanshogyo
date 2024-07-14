@@ -9,7 +9,7 @@ import (
 	reflect "reflect"
 
 	gomock "github.com/golang/mock/gomock"
-	usecase "github.com/pwnedgod/tanshogyo/services/user/internal/app/user/usecase"
+	usecase "github.com/ezraisw/tanshogyo/services/user/internal/app/user/usecase"
 )
 
 // MockUserLoginer is a mock of UserLoginer interface.

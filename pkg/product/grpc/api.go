@@ -3,9 +3,9 @@ package userauthgrpc
 import (
 	"context"
 
-	"github.com/pwnedgod/tanshogyo/pkg/common/util/grpchelper"
-	"github.com/pwnedgod/tanshogyo/pkg/product"
-	"github.com/pwnedgod/tanshogyo/pkg/product/grpc/pb"
+	"github.com/ezraisw/tanshogyo/pkg/common/util/grpchelper"
+	"github.com/ezraisw/tanshogyo/pkg/product"
+	"github.com/ezraisw/tanshogyo/pkg/product/grpc/pb"
 )
 
 type GRPCProductAPI struct {

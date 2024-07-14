@@ -4,9 +4,9 @@ import (
 	"context"
 	"errors"
 
-	"github.com/pwnedgod/tanshogyo/pkg/common/preseterrors"
-	"github.com/pwnedgod/tanshogyo/services/product/internal/app/product/usecase"
-	sellerusecase "github.com/pwnedgod/tanshogyo/services/product/internal/app/seller/usecase"
+	"github.com/ezraisw/tanshogyo/pkg/common/preseterrors"
+	"github.com/ezraisw/tanshogyo/services/product/internal/app/product/usecase"
+	sellerusecase "github.com/ezraisw/tanshogyo/services/product/internal/app/seller/usecase"
 )
 
 type ProductAuthedCreatorOptions struct {

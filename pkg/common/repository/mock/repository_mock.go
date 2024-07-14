@@ -9,8 +9,8 @@ import (
 	reflect "reflect"
 
 	gomock "github.com/golang/mock/gomock"
-	entity "github.com/pwnedgod/tanshogyo/pkg/common/entity"
-	repository "github.com/pwnedgod/tanshogyo/pkg/common/repository"
+	entity "github.com/ezraisw/tanshogyo/pkg/common/entity"
+	repository "github.com/ezraisw/tanshogyo/pkg/common/repository"
 )
 
 // MockRepository is a mock of Repository interface.

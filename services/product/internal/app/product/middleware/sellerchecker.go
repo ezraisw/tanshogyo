@@ -3,11 +3,11 @@ package middleware
 import (
 	"net/http"
 
+	"github.com/ezraisw/tanshogyo/pkg/common/preseterrors"
+	"github.com/ezraisw/tanshogyo/pkg/common/util/httphelper"
+	"github.com/ezraisw/tanshogyo/pkg/userauth"
+	"github.com/ezraisw/tanshogyo/services/product/internal/app/product/usecase"
 	"github.com/go-chi/chi/v5"
-	"github.com/pwnedgod/tanshogyo/pkg/common/preseterrors"
-	"github.com/pwnedgod/tanshogyo/pkg/common/util/httphelper"
-	"github.com/pwnedgod/tanshogyo/pkg/userauth"
-	"github.com/pwnedgod/tanshogyo/services/product/internal/app/product/usecase"
 )
 
 type SellerCheckerMiddleware func(http.Handler) http.Handler

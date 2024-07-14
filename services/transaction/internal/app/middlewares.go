@@ -1,8 +1,8 @@
 package app
 
 import (
-	"github.com/pwnedgod/tanshogyo/pkg/common/adapter/web"
-	"github.com/pwnedgod/tanshogyo/pkg/common/logger"
+	"github.com/ezraisw/tanshogyo/pkg/common/adapter/web"
+	"github.com/ezraisw/tanshogyo/pkg/common/logger"
 )
 
 type MiddlewareRegistries struct {

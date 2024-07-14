@@ -3,7 +3,7 @@ package viper
 import (
 	"strings"
 
-	"github.com/pwnedgod/tanshogyo/pkg/common/config"
+	"github.com/ezraisw/tanshogyo/pkg/common/config"
 	"github.com/spf13/viper"
 )
 

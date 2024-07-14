@@ -1,11 +1,11 @@
 package config
 
 import (
-	"github.com/pwnedgod/tanshogyo/pkg/common/adapter/grpc"
-	"github.com/pwnedgod/tanshogyo/pkg/common/adapter/web"
-	"github.com/pwnedgod/tanshogyo/pkg/common/logger"
-	"github.com/pwnedgod/tanshogyo/pkg/gormds"
-	userauthgrpc "github.com/pwnedgod/tanshogyo/pkg/userauth/grpc"
+	"github.com/ezraisw/tanshogyo/pkg/common/adapter/grpc"
+	"github.com/ezraisw/tanshogyo/pkg/common/adapter/web"
+	"github.com/ezraisw/tanshogyo/pkg/common/logger"
+	"github.com/ezraisw/tanshogyo/pkg/gormds"
+	userauthgrpc "github.com/ezraisw/tanshogyo/pkg/userauth/grpc"
 )
 
 type Config struct {

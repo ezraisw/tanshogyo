@@ -3,7 +3,7 @@ package entity
 import (
 	"fmt"
 
-	"github.com/pwnedgod/tanshogyo/pkg/common/entity"
+	"github.com/ezraisw/tanshogyo/pkg/common/entity"
 	"gorm.io/gorm"
 )
 

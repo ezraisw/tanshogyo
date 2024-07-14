@@ -4,18 +4,18 @@ import (
 	"context"
 	"errors"
 
+	"github.com/ezraisw/tanshogyo/pkg/common/entity"
+	"github.com/ezraisw/tanshogyo/pkg/common/preseterrors"
+	"github.com/ezraisw/tanshogyo/pkg/common/repository"
+	repositorymock "github.com/ezraisw/tanshogyo/pkg/common/repository/mock"
+	"github.com/ezraisw/tanshogyo/services/product/internal/app/product/model"
+	"github.com/ezraisw/tanshogyo/services/product/internal/app/product/usecase"
+	usecaseimpl "github.com/ezraisw/tanshogyo/services/product/internal/app/product/usecase/impl"
+	sellerusecase "github.com/ezraisw/tanshogyo/services/product/internal/app/seller/usecase"
+	sellerusecasemock "github.com/ezraisw/tanshogyo/services/product/internal/app/seller/usecase/mock"
 	"github.com/golang/mock/gomock"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
-	"github.com/pwnedgod/tanshogyo/pkg/common/entity"
-	"github.com/pwnedgod/tanshogyo/pkg/common/preseterrors"
-	"github.com/pwnedgod/tanshogyo/pkg/common/repository"
-	repositorymock "github.com/pwnedgod/tanshogyo/pkg/common/repository/mock"
-	"github.com/pwnedgod/tanshogyo/services/product/internal/app/product/model"
-	"github.com/pwnedgod/tanshogyo/services/product/internal/app/product/usecase"
-	usecaseimpl "github.com/pwnedgod/tanshogyo/services/product/internal/app/product/usecase/impl"
-	sellerusecase "github.com/pwnedgod/tanshogyo/services/product/internal/app/seller/usecase"
-	sellerusecasemock "github.com/pwnedgod/tanshogyo/services/product/internal/app/seller/usecase/mock"
 )
 
 var _ = Describe("ProductAuthedLister", func() {

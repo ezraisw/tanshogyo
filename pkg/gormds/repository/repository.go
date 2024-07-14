@@ -4,10 +4,10 @@ import (
 	"context"
 	"errors"
 
-	"github.com/pwnedgod/tanshogyo/pkg/common/entity"
-	"github.com/pwnedgod/tanshogyo/pkg/common/preseterrors"
-	"github.com/pwnedgod/tanshogyo/pkg/common/repository"
-	gormentity "github.com/pwnedgod/tanshogyo/pkg/gormds/entity"
+	"github.com/ezraisw/tanshogyo/pkg/common/entity"
+	"github.com/ezraisw/tanshogyo/pkg/common/preseterrors"
+	"github.com/ezraisw/tanshogyo/pkg/common/repository"
+	gormentity "github.com/ezraisw/tanshogyo/pkg/gormds/entity"
 	"gorm.io/gorm"
 	"gorm.io/gorm/clause"
 )

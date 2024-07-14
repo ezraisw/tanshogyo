@@ -3,9 +3,9 @@ package usecaseimpl_test
 import (
 	"time"
 
-	"github.com/pwnedgod/tanshogyo/services/product/internal/app/product/model"
-	"github.com/pwnedgod/tanshogyo/services/product/internal/app/product/usecase"
-	sellerusecase "github.com/pwnedgod/tanshogyo/services/product/internal/app/seller/usecase"
+	"github.com/ezraisw/tanshogyo/services/product/internal/app/product/model"
+	"github.com/ezraisw/tanshogyo/services/product/internal/app/product/usecase"
+	sellerusecase "github.com/ezraisw/tanshogyo/services/product/internal/app/seller/usecase"
 )
 
 var (

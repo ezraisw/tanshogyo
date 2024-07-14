@@ -3,9 +3,9 @@ package web
 import (
 	"net/http"
 
+	"github.com/ezraisw/tanshogyo/pkg/common/util/httphelper"
+	"github.com/ezraisw/tanshogyo/services/user/internal/app/user/usecase"
 	"github.com/go-chi/render"
-	"github.com/pwnedgod/tanshogyo/pkg/common/util/httphelper"
-	"github.com/pwnedgod/tanshogyo/services/user/internal/app/user/usecase"
 )
 
 type UserControllerOptions struct {

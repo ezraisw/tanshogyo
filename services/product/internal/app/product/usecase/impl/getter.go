@@ -3,10 +3,10 @@ package usecaseimpl
 import (
 	"context"
 
-	"github.com/pwnedgod/tanshogyo/pkg/common/entity"
-	commonrepository "github.com/pwnedgod/tanshogyo/pkg/common/repository"
-	"github.com/pwnedgod/tanshogyo/services/product/internal/app/product/repository"
-	"github.com/pwnedgod/tanshogyo/services/product/internal/app/product/usecase"
+	"github.com/ezraisw/tanshogyo/pkg/common/entity"
+	commonrepository "github.com/ezraisw/tanshogyo/pkg/common/repository"
+	"github.com/ezraisw/tanshogyo/services/product/internal/app/product/repository"
+	"github.com/ezraisw/tanshogyo/services/product/internal/app/product/usecase"
 )
 
 type ProductGetterOptions struct {
